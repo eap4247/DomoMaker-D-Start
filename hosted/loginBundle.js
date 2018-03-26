@@ -20,7 +20,7 @@ var handleLogin = function handleLogin(e) {
 var handleSignup = function handleSignup(e) {
     e.preventDefault();
 
-    $("#domoMEssage").animate({ width: 'hide' }, 350);
+    $("#domoMessage").animate({ width: 'hide' }, 350);
 
     if ($("#user").val() == '' || $("#pass").val() == '' || $("#pass2").val() == '') {
         handleError("RAWR! All fields are required.");
