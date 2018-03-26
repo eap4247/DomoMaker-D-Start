@@ -30,7 +30,7 @@ var DomoForm = function DomoForm(props) {
         React.createElement(
             "label",
             { htmlFor: "name" },
-            "Nameame: "
+            "Name: "
         ),
         React.createElement("input", { id: "domoName", type: "text", name: "name", placeholder: "Domo Name" }),
         React.createElement(
