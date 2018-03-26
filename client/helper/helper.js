@@ -11,12 +11,12 @@ const redirect = (response) => {
 const sendAjax = (type, action, data, success) => {
   $.ajax({
     cache: false,
-    type,
+    type: type,
     url: action,
-    data,
+    data: data,
     dataType: "json",
-    success,
-    error(xhr, status, error) {
+    success: success,
+    error: function(xhr, status, error) {
       const messageObj = JSON.parse(xhr.responseText);
       handleError(messageObj.error);
     },
